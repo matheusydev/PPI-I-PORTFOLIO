@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 :root {
     --primary-color: #0A1128;
     --secondary-color: #8140BE;
@@ -6,15 +8,28 @@
     --gap: 3rem;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    background: #0A0118;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background:
+        radial-gradient(
+            ellipse 60% 80% at 35% 45%,
+            rgba(129, 64, 190, 0.45) 0%,   
+            transparent 70%
+        ),
+        radial-gradient(
+            ellipse 100% 100% at 50% 50%,
+            #1a0535 0%,
+            #0A0118 60%
+        );
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 
@@ -40,7 +55,7 @@ body {
 }
 
 .menu h1 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
 }
 
@@ -54,11 +69,12 @@ body {
 }
 
 .menu ul li a {
+    text-decoration: none;
     display: block;
-    padding: 2rem;
-    font-size: 1.8rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1rem;
     color: var(--font-primary-color);
-    position: relative;
+    position: relative; 
 }
 
 .menu ul li a::after {
