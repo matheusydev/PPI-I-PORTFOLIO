@@ -18,16 +18,12 @@
 body {
     font-family: 'Inter', sans-serif;
     background:
-        radial-gradient(
-            ellipse 60% 80% at 35% 45%,
-            rgba(129, 64, 190, 0.45) 0%,   
-            transparent 70%
-        ),
-        radial-gradient(
-            ellipse 100% 100% at 50% 50%,
+        radial-gradient(ellipse 60% 80% at 35% 45%,
+            rgba(129, 64, 190, 0.45) 0%,
+            transparent 70%),
+        radial-gradient(ellipse 100% 100% at 50% 50%,
             #1a0535 0%,
-            #0A0118 60%
-        );
+            #0A0118 60%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -56,7 +52,7 @@ body {
 
 .menu h1 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--font-primary-color);
 }
 
 .menu h1 a {
@@ -74,7 +70,7 @@ body {
     padding: 1.2rem 1.5rem;
     font-size: 1rem;
     color: var(--font-primary-color);
-    position: relative; 
+    position: relative;
 }
 
 .menu ul li a::after {
@@ -91,4 +87,95 @@ body {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero-text h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--font-primary-color);
+    line-height: 1.1;
+}
+
+.hero-text h2 span {
+    color: var(--secondary-color);
+}
+
+.hero-text p {
+    color: var(--font-secondary-color);
+    font-size: 1.1rem;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.code-card {
+    background: #1a1a2e;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 0.1rem solid #333;
+}
+
+.code-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.2rem;
+    background: #141420;
+    border-bottom: 0.1rem solid #333;
+}
+
+.code-cerc {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.code-cerc span {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+}
+
+.code-cerc span:nth-child(1) {
+    background: #ff5f57;
+}
+
+.code-cerc span:nth-child(2) {
+    background: #febc2e;
+}
+
+.code-cerc span:nth-child(3) {
+    background: #28c840;
+}
+
+.code-body {
+    padding: 1.5rem;
+    color: #cdd6f4;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.code-filename {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
 }
