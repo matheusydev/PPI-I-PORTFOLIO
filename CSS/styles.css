@@ -59,11 +59,14 @@ body {
     top: 0;
     left: 0;
     right: 0;
-
     width: 100%;
     z-index: 100;
 
-    border-bottom: 0.1rem solid var(--color-border-accent);
+    background: rgba(10, 1, 24, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+
+    border-bottom: 0.1rem solid rgba(129, 64, 190, 0.3);
 }
 
 .header-content {
@@ -77,7 +80,7 @@ body {
 
 /* ✦ Logo */
 .logo {
-    padding: 1.2rem 1.5rem;
+    padding: 1rem 1.5rem;
 
     font-size: 1.8rem;
     font-weight: 800;
@@ -109,7 +112,7 @@ body {
     content: '';
 
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.6rem;
     left: 50%;
 
     width: 0;
