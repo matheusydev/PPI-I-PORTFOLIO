@@ -51,6 +51,7 @@ body {
 
     background-attachment: fixed;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* ✦ Header */
@@ -291,27 +292,27 @@ body {
 }
 
 /* ✦ Botões do Card */
-.code-cerc {
+.code-circle {
     display: flex;
     gap: 0.5rem;
 }
 
-.code-cerc span {
+.code-circle span {
     width: 0.8rem;
     height: 0.8rem;
 
     border-radius: 50%;
 }
 
-.code-cerc span:nth-child(1) {
+.code-circle span:nth-child(1) {
     background: #ff5f57;
 }
 
-.code-cerc span:nth-child(2) {
+.code-circle span:nth-child(2) {
     background: #febc2e;
 }
 
-.code-cerc span:nth-child(3) {
+.code-circle span:nth-child(3) {
     background: #28c840;
 }
 
