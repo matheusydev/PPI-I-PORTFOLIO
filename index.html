@@ -11,23 +11,23 @@
 
 <body>
 
-    <aside class="menu">
-        <div class="menu-content">
-            <div class="logo">
-                <h1>Y</h1>
-            </div>
-            <nav>
+    <header class="header">
+        <div class="header-content">
+
+            <a href="#sobre" class="logo" aria-label="Voltar ao inicio">MY</a>
+
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projeto">Projetos</a></li>
-                    <li><a href="#certificado">Certificados</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#certificados">Certificados</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
         </div>
-    </aside>
+    </header>
 
     <main>
         <section class="hero" id="sobre">
@@ -53,17 +53,48 @@
 02    name: 'Matheus Ylan',
 03    focus: 'Desenvolvimento Fullstack',
 04    skills: ['Typescript', 'React', 'Tailwind'],
-05    currentlyLearning: ['Java', 'SpringBoot' 'Docker'],
+05    currentlyLearning: ['Java', 'SpringBoot', 'Docker'],
 06    openToProjects: true
 07  };
 08
-09  developer.showcase();</pre>      
+09  developer.showcase();</pre>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="habilidades" id="habilidades">
+            <div class="section-content">
+                <h2 class="section-title">Habilidades</h2>
+
+            </div>
+
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="section-content">
+                <h2 class="section-title">Projetos</h2>
+            </div>
+
+        </section>
+
+        <section class="certificados" id="certificados">
+            <div class="section-content">
+                <h2 class="section-title">Certificados</h2>
+            </div>
+
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="section-content">
+                <h2 class="section-title">Contatos</h2>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer">
+        
+    </footer>
 </body>
 
 </html>
