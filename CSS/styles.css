@@ -171,6 +171,99 @@ body {
     color: var(--color-text-muted);
 }
 
+/* ✦ Badge */
+.hero-badge {
+    display: inline-block;
+    width: fit-content;
+
+    padding: 0.4rem 1.2rem;
+
+    border: 0.1rem solid var(--color-accent);
+    border-radius: 2rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: var(--color-text-body);
+}
+
+/* ✦ Ícones Sociais */
+.hero-socials {
+    display: flex;
+    list-style: none;
+    gap: 0.8rem;
+}
+
+.hero-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.8rem;
+    height: 2.8rem;
+
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-border);
+
+    color: var(--color-text-body);
+    text-decoration: none;
+
+    transition: border-color 300ms ease, color 300ms ease;
+}
+
+.hero-socials a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* ✦ Botões */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 0.85rem 1.8rem;
+
+    border-radius: 0.5rem;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-text-heading);
+    border: 0.1rem solid var(--color-accent);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--color-text-heading);
+    border: 0.1rem solid var(--color-border);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
 /* ✦ Code Card */
 .code-card {
     overflow: hidden;
