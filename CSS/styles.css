@@ -349,12 +349,24 @@ body {
 
 /* ✦ Títulos das Seções */
 .section-title {
-    margin-bottom: 3rem;
-
-    font-size: 2rem;
-    font-weight: 700;
-
+    margin: 0 auto 1.75rem;
+    font-size: clamp(2.2rem, 1.4rem + 2.8vw, 4rem);
+    font-weight: 900;
+    line-height: 1.06;
+    letter-spacing: 0;
     color: var(--color-text-heading);
+    text-align: center;
+}
+
+
+.section-title span {
+    color: var(--color-accent);
+    /* fallback */
+    background: linear-gradient(180deg, #b46cff 0%, #7f3fd9 60%, #6232c0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 8px 26px rgba(129, 64, 190, 0.28);
 }
 
 .section-title span {
@@ -467,6 +479,8 @@ body {
     text-transform: uppercase;
     color: var(--color-text-muted);
     margin-bottom: 1.2rem;
+    text-align: center;
+    width: 100%;
 }
 
 /* ✦ Wrapper — ocupa tela toda e pausa no hover */
@@ -475,6 +489,7 @@ body {
     cursor: default;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+    padding-inline: 1.25rem;
 }
 
 .skills-track-wrapper:hover .skills-track {
@@ -798,11 +813,12 @@ body {
 
 /* ✦ Contato */
 .contato-desc {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    margin-top: -1.5rem;
-    margin-bottom: 3rem;
-    max-width: 500px;
+    font-size: clamp(1rem, 0.95rem + 0.28vw, 1.15rem);
+    line-height: 1.72;
+    color: var(--color-text-body);
+    margin: 0.4rem auto 2.5rem;
+    max-width: 60ch;
+    text-align: center;
 }
 
 .contato-grid {
@@ -839,9 +855,9 @@ body {
 }
 
 .social-icon {
-  display: block;
-  filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(260%) hue-rotate(176deg);
-  transition: filter .3s ease, transform .3s ease;
+    display: block;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(260%) hue-rotate(176deg);
+    transition: filter .3s ease, transform .3s ease;
 }
 
 .contato-card a:hover .social-icon {
@@ -903,4 +919,25 @@ body {
 
 .footer-socials a:hover {
     color: var(--color-accent);
+}
+
+/* ✦ Kicker */
+.section-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .9rem;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .38em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.section-kicker::before,
+.section-kicker::after {
+    content: "";
+    width: 56px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(129, 64, 190, .65), transparent);
 }
