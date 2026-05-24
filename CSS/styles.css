@@ -554,3 +554,135 @@ body {
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
+
+/* ✦ Projetos */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-bg-surface);
+    border: 0.1rem solid var(--color-border);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    transition: border-color 300ms ease, transform 300ms ease;
+}
+
+.projeto-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+}
+
+/* ✦ Imagem placeholder colorida */
+.projeto-img {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto-img--purple { background: linear-gradient(135deg, #2d1b4e, #4a2880); }
+.projeto-img--blue   { background: linear-gradient(135deg, #0d1b3e, #1a3a6e); }
+.projeto-img--green  { background: linear-gradient(135deg, #0d2e1a, #1a5c34); }
+.projeto-img--orange { background: linear-gradient(135deg, #2e1a0d, #6e3a1a); }
+.projeto-img--teal   { background: linear-gradient(135deg, #0d2e2e, #1a5c5c); }
+
+.projeto-icon {
+    font-size: 2.5rem;
+    font-style: normal;
+    opacity: 0.4;
+    color: #fff;
+}
+
+/* ✦ Corpo do card */
+.projeto-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+    gap: 0.8rem;
+}
+
+/* ✦ Badge "Em desenvolvimento" */
+.projeto-badge {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(129, 64, 190, 0.15);
+    color: var(--color-accent);
+    border: 0.1rem solid rgba(129, 64, 190, 0.3);
+}
+
+.projeto-titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-heading);
+}
+
+.projeto-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* ✦ Tags de tecnologias */
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.projeto-tags li {
+    padding: 0.2rem 0.7rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    background: var(--color-bg-surface-dark);
+    color: var(--color-text-body);
+    border: 0.1rem solid var(--color-border);
+}
+
+/* ✦ Botão do card */
+.projeto-links {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 0.1rem solid var(--color-border);
+}
+
+.projeto-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text-body);
+
+    border: 0.1rem solid var(--color-border);
+    border-radius: 0.4rem;
+
+    transition: border-color 300ms ease, color 300ms ease;
+}
+
+.projeto-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
