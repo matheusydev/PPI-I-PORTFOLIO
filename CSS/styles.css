@@ -686,3 +686,81 @@ body {
     border-color: var(--color-accent);
     color: var(--color-accent);
 }
+
+/* ✦ Certificados */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding: 1.2rem 1.5rem;
+
+    background: var(--color-bg-surface);
+    border: 0.1rem solid var(--color-border);
+    border-left: 0.3rem solid var(--color-accent);
+    border-radius: 0 0.8rem 0.8rem 0;
+
+    transition: border-color 300ms ease, transform 300ms ease;
+}
+
+.cert-card:hover {
+    border-left-color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateX(4px);
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-instituicao {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.cert-data {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.cert-titulo {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-heading);
+    line-height: 1.4;
+    flex: 1;
+}
+
+.cert-footer {
+    margin-top: auto;
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+}
+
+.cert-tags li {
+    padding: 0.15rem 0.6rem;
+    border-radius: 2rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    background: var(--color-bg-surface-dark);
+    color: var(--color-text-muted);
+    border: 0.1rem solid var(--color-border);
+}
