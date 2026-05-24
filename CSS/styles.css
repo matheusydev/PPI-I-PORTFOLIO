@@ -818,17 +818,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-
     padding: 2rem 1rem;
-
     background: var(--color-bg-surface);
     border: 0.1rem solid var(--color-border);
     border-radius: 1rem;
-
     text-decoration: none;
-    color: var(--color-text-muted);
-
-    transition: border-color 300ms ease, color 300ms ease, transform 300ms ease;
 }
 
 .contato-card a:hover {
@@ -837,15 +831,22 @@ body {
     transform: translateY(-4px);
 }
 
-.contato-card svg {
-    transition: color 300ms ease;
-}
-
 .contato-nome {
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-text-heading);
     transition: color 300ms ease;
+}
+
+.social-icon {
+  display: block;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(260%) hue-rotate(176deg);
+  transition: filter .3s ease, transform .3s ease;
+}
+
+.contato-card a:hover .social-icon {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(52%) saturate(1080%) hue-rotate(238deg);
+    transform: scale(1.06);
 }
 
 .contato-card a:hover .contato-nome {
