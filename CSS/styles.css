@@ -825,3 +825,50 @@ body {
     font-size: 0.8rem;
     color: var(--color-text-muted);
 }
+
+/* ✦ Footer */
+.footer {
+    margin-top: 4rem;
+    border-top: 0.1rem solid var(--color-border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.footer-copy span {
+    color: var(--color-text-body);
+    font-weight: 500;
+}
+
+.footer-socials {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-text-muted);
+    text-decoration: none;
+
+    transition: color 300ms ease;
+}
+
+.footer-socials a:hover {
+    color: var(--color-accent);
+}
