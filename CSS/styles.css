@@ -38,16 +38,12 @@ body {
     color: var(--color-text-body);
 
     background:
-        radial-gradient(
-            ellipse 60% 80% at 35% 45%,
+        radial-gradient(ellipse 60% 80% at 35% 45%,
             rgba(129, 64, 190, 0.45) 0%,
-            transparent 70%
-        ),
-        radial-gradient(
-            ellipse 100% 100% at 50% 50%,
+            transparent 70%),
+        radial-gradient(ellipse 100% 100% at 50% 50%,
             #1a0535 0%,
-            var(--color-bg-primary) 60%
-        );
+            var(--color-bg-primary) 60%);
 
     background-attachment: fixed;
     min-height: 100vh;
@@ -204,22 +200,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 2.8rem;
     height: 2.8rem;
-
     border-radius: 50%;
     border: 0.1rem solid var(--color-border);
-
-    color: var(--color-text-body);
     text-decoration: none;
-
-    transition: border-color 300ms ease, color 300ms ease;
+    transition: border-color 300ms ease, transform 300ms ease;
 }
 
 .hero-socials a:hover {
     border-color: var(--color-accent);
-    color: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+.hero-socials img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(260%) hue-rotate(176deg);
+    transition: filter 300ms ease, transform 300ms ease;
+}
+
+.hero-socials a:hover img {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(52%) saturate(1080%) hue-rotate(238deg);
+    transform: scale(1.06);
 }
 
 /* ✦ Botões */
@@ -304,9 +308,17 @@ body {
     border-radius: 50%;
 }
 
-.code-circle span:nth-child(1) { background: #ff5f57; }
-.code-circle span:nth-child(2) { background: #febc2e; }
-.code-circle span:nth-child(3) { background: #28c840; }
+.code-circle span:nth-child(1) {
+    background: #ff5f57;
+}
+
+.code-circle span:nth-child(2) {
+    background: #febc2e;
+}
+
+.code-circle span:nth-child(3) {
+    background: #28c840;
+}
 
 /* ✦ Nome do Arquivo */
 .code-filename {
@@ -486,8 +498,13 @@ body {
 
 /* ✦ Animação */
 @keyframes marquee {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* ✦ Cards */
@@ -588,11 +605,25 @@ body {
     justify-content: center;
 }
 
-.projeto-img--purple { background: linear-gradient(135deg, #2d1b4e, #4a2880); }
-.projeto-img--blue   { background: linear-gradient(135deg, #0d1b3e, #1a3a6e); }
-.projeto-img--green  { background: linear-gradient(135deg, #0d2e1a, #1a5c34); }
-.projeto-img--orange { background: linear-gradient(135deg, #2e1a0d, #6e3a1a); }
-.projeto-img--teal   { background: linear-gradient(135deg, #0d2e2e, #1a5c5c); }
+.projeto-img--purple {
+    background: linear-gradient(135deg, #2d1b4e, #4a2880);
+}
+
+.projeto-img--blue {
+    background: linear-gradient(135deg, #0d1b3e, #1a3a6e);
+}
+
+.projeto-img--green {
+    background: linear-gradient(135deg, #0d2e1a, #1a5c34);
+}
+
+.projeto-img--orange {
+    background: linear-gradient(135deg, #2e1a0d, #6e3a1a);
+}
+
+.projeto-img--teal {
+    background: linear-gradient(135deg, #0d2e2e, #1a5c5c);
+}
 
 .projeto-icon {
     font-size: 2.5rem;
