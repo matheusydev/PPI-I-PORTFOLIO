@@ -764,3 +764,64 @@ body {
     color: var(--color-text-muted);
     border: 0.1rem solid var(--color-border);
 }
+
+/* ✦ Contato */
+.contato-desc {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.contato-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    padding: 2rem 1rem;
+
+    background: var(--color-bg-surface);
+    border: 0.1rem solid var(--color-border);
+    border-radius: 1rem;
+
+    text-decoration: none;
+    color: var(--color-text-muted);
+
+    transition: border-color 300ms ease, color 300ms ease, transform 300ms ease;
+}
+
+.contato-card a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: translateY(-4px);
+}
+
+.contato-card svg {
+    transition: color 300ms ease;
+}
+
+.contato-nome {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-heading);
+    transition: color 300ms ease;
+}
+
+.contato-card a:hover .contato-nome {
+    color: var(--color-accent);
+}
+
+.contato-handle {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
