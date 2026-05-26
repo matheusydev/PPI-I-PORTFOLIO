@@ -2,18 +2,56 @@
 
 # Portfólio — Matheus Ylan
 
-Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina Programação para Internet I, apresentando minha trajetória, habilidades, projetos e certificados como desenvolvedor full stack.
+Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina **Programação para Internet I**, apresentando minha trajetória, habilidades, projetos e certificados como desenvolvedor full stack.
 
 🔗 **[Ver portfólio ao vivo](https://matheusydev.github.io/PPI-I-PORTFOLIO)**
+
+<!-- 🎥 **[Ver vídeo de apresentação](LINK_DO_VIDEO_AQUI)** -->
 
 <br/>
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-<!-- [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) -->
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 
 </div>
+
+
+## 🎯 Tema Escolhido
+
+Portfólio pessoal de desenvolvedor fullstack, página única apresentando habilidades técnicas, projetos desenvolvidos, certificações obtidas e canais de contato.
+
+---
+
+## 📝 Descrição do Portfólio
+
+O projeto consiste em uma landing page responsiva construída inteiramente com HTML5 semântico e CSS3 puro, sem uso de frameworks como Bootstrap ou Tailwind. A página apresenta seções de apresentação pessoal, carrossel infinito de habilidades, grid de projetos com tecnologias utilizadas, listagem de certificados e formulário de contato.
+
+---
+
+## 🏗️ O que foi desenvolvido
+
+- Estrutura semântica com `header`, `main`, `section`, `footer` e hierarquia correta de headings
+- Hero section com card de código animado
+- Seção Sobre Mim com foto, bio e estatísticas
+- Carrossel infinito de habilidades com animação CSS `@keyframes` pausável no hover
+- Grid de projetos com cards, tags de tecnologias e links para o GitHub
+- Grid de certificados com instituição, data e competências
+- Seção de contato com redes sociais e formulário semântico
+- Footer com copyright e ícones de redes sociais
+- Layout totalmente responsivo com media queries para tablet e mobile
+- Versionamento com Git Flow usando branches `develop` e `main`
+- Deploy via GitHub Pages
+
+---
+
+## ⚡ Principais Desafios Encontrados
+
+- **Animação marquee infinita** — criar o loop perfeito sem saltos visuais exigiu duplicar os cards e calcular o `translateX(-50%)` corretamente
+- **Faixa de habilidades ocupando a tela toda** — quebrar o `max-width` do container pai usando `width: 100vw` e `margin-left: calc(-50vw + 50%)`
+- **Responsividade sem framework** — adaptar grids complexos para mobile usando apenas media queries
+- **Filtro CSS em ícones SVG externos** — simular cor roxa nos ícones sem acesso ao `fill` interno usando `hue-rotate` e `saturate`
+- **Semântica HTML correta** — entender a diferença entre `aside`, `header`, `section`, `article` e aplicar cada elemento no contexto certo
 
 ---
 
@@ -24,7 +62,7 @@ Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina P
 - **Habilidades** — carrossel infinito com animação marquee CSS
 - **Projetos** — grid de cards com tecnologias e links para o GitHub
 - **Certificados** — grid com instituição, data e competências
-- **Contato** — cards de redes sociais
+- **Contato** — redes sociais e formulário de contato
 
 ---
 
@@ -50,6 +88,7 @@ Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina P
 - Hover interativo em todos os cards
 - Ícones SVG com filtro CSS
 - Hierarquia semântica HTML correta
+- Formulário de contato semântico
 - Conventional Commits no histórico git
 
 ---
@@ -102,7 +141,7 @@ cd PPI-I-PORTFOLIO
 - ✅ **CSS Animations** — marquee infinito com `@keyframes`
 - ✅ **Responsividade** — media queries para tablet e mobile
 - ✅ **Acessibilidade** — `aria-label`, hierarquia de headings, `rel="noopener"`
-- ✅ **SVG inline e externo** — ícones com filtro CSS
+- ✅ **SVG externo** — ícones com filtro CSS
 - ✅ **Git Flow** — branches `develop` e `main`
 - ✅ **Conventional Commits** — padronização do histórico
 - ✅ **GitHub Pages** — deploy de projeto estático
@@ -118,5 +157,5 @@ cd PPI-I-PORTFOLIO
 ---
 
 <div align="center">
-  Desenvolvido por <strong>Matheus Ylan</strong>
+  Desenvolvido por <strong>Matheus Ylan</strong> · Disciplina: Programação para Internet I
 </div>
