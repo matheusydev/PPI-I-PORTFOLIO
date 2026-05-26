@@ -84,15 +84,17 @@
 01  const developer = {
 02    name: 'Matheus Ylan',
 03    role: 'Fullstack Developer',
-04    focus: ['Frontend', 'Backend', 'UI/UX'],
-05    stack: ['TypeScript', 'React', 'Tailwind CSS'],
-06    learning: ['Java', 'Spring Boot', 'Docker'],
-07    background: ['Electronics Technician', 'ADS @ IFPI'],
-08    openToWork: true
-09    codingSoundtrack: ['TV Girl', 'Black Sabbath', 'Laufey'],
-10  };
-11
-12  developer.buildAwesomeStuff();</pre>
+04    stack: ['React', 'TypeScript', 'Tailwind CSS'],
+05    currentlyLearning: ['Java', 'Spring Boot', 'Docker'],
+06    background: {
+07      technician: 'Electronics Technician',
+08      graduation: 'Systems Analysis and Development'
+09    },
+10    codingSoundtrack: ['TV Girl', 'Black Sabbath', 'Laufey'],
+11    availableForProjects: true
+12  };
+13
+14  developer.buildAwesomeStuff();</pre>
                     </div>
                 </div>
             </div>
@@ -694,56 +696,71 @@
             </div>
         </section>
 
-
         <section class="contato" id="contato">
             <div class="section-content">
+
                 <p class="section-kicker">Vamos Conversar</p>
                 <h2 class="section-title">Entre em <span>Contato</span></h2>
-                <p class="contato-desc">Estou disponível para oportunidades, freelas ou só para trocar uma ideia. Me
-                    chama em qualquer uma das redes abaixo.</p>
+                <p class="contato-desc">Estou disponível para oportunidades, freela ou só para trocar uma ideia.</p>
 
-                <ul class="contato-grid">
-
-                    <li class="contato-card">
+                <ul class="contato-socials">
+                    <li>
                         <a href="https://github.com/matheusydev" target="_blank" rel="noopener noreferrer"
                             aria-label="GitHub">
-                            <img class="social-icon" src="ASSETS/ICONS/github.svg" alt="" width="36" height="36"
-                                aria-hidden="true">
-                            <span class="contato-nome">GitHub</span>
-                            <span class="contato-handle">@matheusydev</span>
+                            <img src="ASSETS/ICONS/github.svg" alt="" width="20" height="20" aria-hidden="true">
+                            github.com/matheusydev
                         </a>
                     </li>
-
-                    <li class="contato-card">
+                    <li>
                         <a href="https://br.linkedin.com/in/matheus-ylan-araújo-moraes-411615350" target="_blank"
                             rel="noopener noreferrer" aria-label="LinkedIn">
-                            <img class="social-icon" src="ASSETS/ICONS/linkedin.svg" alt="" width="36" height="36"
-                                aria-hidden="true">
-                            <span class="contato-nome">LinkedIn</span>
-                            <span class="contato-handle">Matheus Ylan</span>
+                            <img src="ASSETS/ICONS/linkedin.svg" alt="" width="20" height="20" aria-hidden="true">
+                            Matheus Ylan
                         </a>
                     </li>
-
-                    <li class="contato-card">
+                    <li>
                         <a href="https://www.instagram.com/theus_.arj" target="_blank" rel="noopener noreferrer"
                             aria-label="Instagram">
-                            <img class="social-icon" src="ASSETS/ICONS/instagram.svg" alt="" width="36" height="36"
-                                aria-hidden="true">
-                            <span class="contato-nome">Instagram</span>
-                            <span class="contato-handle">@theus_.arj</span>
+                            <img src="ASSETS/ICONS/instagram.svg" alt="" width="20" height="20" aria-hidden="true">
+                            @theus_.arj
                         </a>
                     </li>
-
-                    <li class="contato-card">
-                        <a href="mailto:matheusylanaraujo@email.com" aria-label="Email">
-                            <img class="social-icon" src="ASSETS/ICONS/gmail.svg" alt="" width="36" height="36"
-                                aria-hidden="true">
-                            <span class="contato-nome">Email</span>
-                            <span class="contato-handle">matheusylanaraujo@gmail.com</span>
+                    <li>
+                        <a href="mailto:matheusylanaraujo@gmail.com" aria-label="Email">
+                            <img src="ASSETS/ICONS/gmail.svg" alt="" width="20" height="20" aria-hidden="true">
+                            matheusylanaraujo@gmail.com
                         </a>
                     </li>
-
                 </ul>
+
+                <!-- Formulário -->
+                <form class="contato-form">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="6"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary form-btn">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+
+                </form>
+
             </div>
         </section>
     </main>
@@ -755,7 +772,7 @@
                 &copy; 2025 <span>Matheus Ylan</span>. Todos os direitos reservados.
             </p>
 
-            <!-- <ul class="footer-socials">
+            <ul class="footer-socials">
                 <li>
                     <a href="https://github.com/matheusydev" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub">
@@ -779,7 +796,7 @@
                         <img src="ASSETS/ICONS/gmail.svg" alt="" width="20" height="20" aria-hidden="true">
                     </a>
                 </li>
-            </ul> -->
+            </ul>
 
         </div>
     </footer>
