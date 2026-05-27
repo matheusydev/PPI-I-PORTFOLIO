@@ -367,7 +367,6 @@ body {
 
 
 .section-title span {
-    color: var(--color-accent);
     /* fallback */
     background: linear-gradient(180deg, #b46cff 0%, #7f3fd9 60%, #6232c0 100%);
     -webkit-background-clip: text;
@@ -589,6 +588,66 @@ body {
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
+
+
+/* ✦ Tabela */
+
+.competencias {
+  padding: var(--spacing-section) 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 0.1rem solid var(--color-border);
+  border-radius: 0.9rem;
+  background: var(--color-bg-surface);
+}
+
+.competencias-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.competencias-table caption {
+  text-align: left;
+  padding: 1rem 1.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 0.1rem solid var(--color-border);
+}
+
+.competencias-table th,
+.competencias-table td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  border-bottom: 0.1rem solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.competencias-table thead th {
+  color: var(--color-text-heading);
+  font-weight: 700;
+  background: var(--color-bg-surface-dark);
+}
+
+.competencias-table tbody th {
+  color: var(--color-text-heading);
+  font-weight: 600;
+}
+
+.competencias-table tbody td {
+  color: var(--color-text-body);
+}
+
+.competencias-table tbody tr:hover {
+  background: rgba(129, 64, 190, 0.08);
+}
+
 
 /* ✦ Projetos */
 .projetos-grid {
@@ -957,52 +1016,6 @@ body {
 
 
 /* ✦ Footer */
-.footer-socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: var(--color-text-muted);
-    text-decoration: none;
-
-    transition: color 300ms ease, transform 300ms ease;
-}
-
-.footer-socials img {
-    display: block;
-    filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(260%) hue-rotate(176deg);
-    transition: filter 300ms ease, transform 300ms ease;
-}
-
-.footer-socials a:hover {
-    color: var(--color-accent);
-    transform: translateY(-1px);
-}
-
-.footer-socials a:hover img {
-    filter: brightness(0) saturate(100%) invert(43%) sepia(52%) saturate(1080%) hue-rotate(238deg);
-    transform: scale(1.06);
-}
-
-
-/* ✦ Responsividade */
-@media (max-width: 768px) {
-    .contato-socials {
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-form {
-        padding: 1.5rem 1rem;
-    }
-}
-
-/* ✦ Footer */
 .footer {
     margin-top: 4rem;
     border-top: 0.1rem solid var(--color-border);
@@ -1070,12 +1083,12 @@ body {
     background: linear-gradient(to right, transparent, rgba(129, 64, 190, .65), transparent);
 }
 
+
 /* ✦ RESPONSIVIDADE */
 
 /* ✦ Tablet — até 768px */
 @media (max-width: 768px) {
 
-    /* Header — esconde o menu, só logo */
     .header nav {
         display: none;
     }
@@ -1084,7 +1097,6 @@ body {
         padding: 1rem 1.5rem;
     }
 
-    /* Hero — coluna única, code card some */
     .hero {
         padding: 6rem 1.5rem 3rem;
         min-height: auto;
@@ -1102,7 +1114,6 @@ body {
         font-size: 3.2rem;
     }
 
-    /* Sobre — coluna única, foto abaixo */
     .sobre {
         padding: var(--spacing-section) 1.5rem;
     }
@@ -1116,12 +1127,10 @@ body {
         height: 350px;
     }
 
-    /* Habilidades */
     .habilidades .section-content {
         padding: 0 1.5rem;
     }
 
-    /* Projetos — 2 colunas */
     .projetos {
         padding: var(--spacing-section) 1.5rem;
     }
@@ -1130,7 +1139,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Certificados — 2 colunas */
     .certificados {
         padding: var(--spacing-section) 1.5rem;
     }
@@ -1139,28 +1147,28 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Contato — 2 colunas */
     .contato {
         padding: var(--spacing-section) 1.5rem;
     }
 
-    .contato-grid {
-        grid-template-columns: 1fr;
+    .contato-socials {
+        gap: 1rem;
     }
 
-    /* Footer — coluna centralizada */
     .footer-content {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
         padding: 1.5rem;
     }
+
+    .competencias {
+        padding: var(--spacing-section) 1.5rem;
+    }
 }
 
 /* ✦ Mobile — até 480px */
 @media (max-width: 480px) {
-
-    /* Hero */
     .hero {
         padding: 5rem 1rem 2rem;
     }
@@ -1177,7 +1185,6 @@ body {
         text-align: center;
     }
 
-    /* Sobre */
     .sobre {
         padding: var(--spacing-section) 1rem;
     }
@@ -1194,7 +1201,6 @@ body {
         height: 280px;
     }
 
-    /* Projetos — 1 coluna */
     .projetos {
         padding: var(--spacing-section) 1rem;
     }
@@ -1203,7 +1209,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    /* Certificados — 1 coluna */
     .certificados {
         padding: var(--spacing-section) 1rem;
     }
@@ -1212,17 +1217,23 @@ body {
         grid-template-columns: 1fr;
     }
 
-    /* Contato — 1 coluna */
     .contato {
         padding: var(--spacing-section) 1rem;
     }
 
-    .contato-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .form-row {
+        grid-template-columns: 1fr;
     }
 
-    /* Footer */
+    .contato-form {
+        padding: 1.5rem 1rem;
+    }
+
     .footer-content {
         padding: 1.2rem 1rem;
+    }
+
+    .competencias {
+        padding: var(--spacing-section) 1rem;
     }
 }
