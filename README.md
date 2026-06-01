@@ -6,7 +6,7 @@ Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina *
 
 🔗 **[Ver portfólio ao vivo](https://matheusydev.github.io/PPI-I-PORTFOLIO)**
 
-<!-- 🎥 **[Ver vídeo de apresentação](LINK_DO_VIDEO_AQUI)** -->
+🎥 **[Ver vídeo de apresentação](https://drive.google.com/file/d/1LvLPDYjXyHFJ2Qn5FgIQha2A5fPvB4sF/view?usp=sharing)**
 
 <br/>
 
@@ -16,6 +16,7 @@ Portfólio pessoal desenvolvido com HTML e CSS puro como projeto da disciplina *
 
 </div>
 
+---
 
 ## 🎯 Tema Escolhido
 
@@ -25,7 +26,7 @@ Portfólio pessoal de desenvolvedor fullstack, página única apresentando habil
 
 ## 📝 Descrição do Portfólio
 
-O projeto consiste em uma landing page responsiva construída inteiramente com HTML5 semântico e CSS3 puro, sem uso de frameworks como Bootstrap ou Tailwind. A página apresenta seções de apresentação pessoal, carrossel infinito de habilidades, grid de projetos com tecnologias utilizadas, listagem de certificados e formulário de contato.
+O projeto consiste em uma landing page responsiva construída inteiramente com HTML5 semântico e CSS3 puro, sem uso de frameworks como Bootstrap ou Tailwind. A página apresenta seções de apresentação pessoal, carrossel infinito de habilidades, matriz de competências técnicas, grid de projetos com tecnologias utilizadas, listagem de certificados e formulário de contato.
 
 ---
 
@@ -35,6 +36,7 @@ O projeto consiste em uma landing page responsiva construída inteiramente com H
 - Hero section com card de código animado
 - Seção Sobre Mim com foto, bio e estatísticas
 - Carrossel infinito de habilidades com animação CSS `@keyframes` pausável no hover
+- Tabela de competências técnicas com nível, contexto de uso e status por tecnologia
 - Grid de projetos com cards, tags de tecnologias e links para o GitHub
 - Grid de certificados com instituição, data e competências
 - Seção de contato com redes sociais e formulário semântico
@@ -52,6 +54,7 @@ O projeto consiste em uma landing page responsiva construída inteiramente com H
 - **Responsividade sem framework** — adaptar grids complexos para mobile usando apenas media queries
 - **Filtro CSS em ícones SVG externos** — simular cor roxa nos ícones sem acesso ao `fill` interno usando `hue-rotate` e `saturate`
 - **Semântica HTML correta** — entender a diferença entre `aside`, `header`, `section`, `article` e aplicar cada elemento no contexto certo
+- **Tabela semântica acessível** — uso correto de `<caption>`, `scope="col"` e `scope="row"` para estruturar a matriz de competências
 
 ---
 
@@ -60,6 +63,7 @@ O projeto consiste em uma landing page responsiva construída inteiramente com H
 - **Hero** — apresentação com card de código animado
 - **Sobre Mim** — bio, foto e estatísticas
 - **Habilidades** — carrossel infinito com animação marquee CSS
+- **Competências Técnicas** — tabela com skill matrix: tecnologia, nível, onde uso e status
 - **Projetos** — grid de cards com tecnologias e links para o GitHub
 - **Certificados** — grid com instituição, data e competências
 - **Contato** — redes sociais e formulário de contato
@@ -70,7 +74,7 @@ O projeto consiste em uma landing page responsiva construída inteiramente com H
 
 | Tecnologia | Uso |
 |---|---|
-| HTML5 semântico | Estrutura e acessibilidade |
+| HTML5 semântico | Estrutura, acessibilidade e tabela de competências |
 | CSS3 moderno | Estilização, animações e responsividade |
 | CSS Grid & Flexbox | Layouts das seções |
 | CSS Custom Properties | Sistema de variáveis e design tokens |
@@ -88,7 +92,8 @@ O projeto consiste em uma landing page responsiva construída inteiramente com H
 - Hover interativo em todos os cards
 - Ícones SVG com filtro CSS
 - Hierarquia semântica HTML correta
-- Formulário de contato semântico
+- Tabela de competências com `<caption>` e atributos `scope`
+- Formulário de contato semântico com validação nativa
 - Conventional Commits no histórico git
 
 ---
@@ -136,11 +141,12 @@ cd PPI-I-PORTFOLIO
 ## 🎓 Aprendizados Adquiridos
 
 - ✅ **Semântica HTML** — uso correto de `header`, `main`, `section`, `article`, `footer`
+- ✅ **Tabela HTML semântica** — `<caption>`, `scope="col"` e `scope="row"` para acessibilidade
 - ✅ **CSS Custom Properties** — sistema de variáveis semânticas
 - ✅ **CSS Grid** — layouts complexos sem framework
 - ✅ **CSS Animations** — marquee infinito com `@keyframes`
 - ✅ **Responsividade** — media queries para tablet e mobile
-- ✅ **Acessibilidade** — `aria-label`, hierarquia de headings, `rel="noopener"`
+- ✅ **Acessibilidade** — `aria-label`, `aria-hidden`, hierarquia de headings, `rel="noopener"`
 - ✅ **SVG externo** — ícones com filtro CSS
 - ✅ **Git Flow** — branches `develop` e `main`
 - ✅ **Conventional Commits** — padronização do histórico
